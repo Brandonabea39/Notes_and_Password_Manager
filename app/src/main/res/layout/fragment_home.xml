@@ -1,14 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment">
+    tools:context=".HomeFragment"
+    android:orientation="vertical">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="188dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="12.7dp"
+        android:layout_marginRight="62dp"
+        android:background="@drawable/blue_border_rounded_cornwe">
 
-</FrameLayout>
+        <!--  INPUT-->
+        <TextView
+            android:id="@+id/notes_textview"
+            android:layout_width="217dp"
+            android:layout_height="269dp"
+            android:layout_toRightOf="@+id/icon"
+            android:gravity="center"
+            android:text="Notes"
+            android:textSize="27sp" />
+
+        <!--ICON-->
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:src="@drawable/notes_icon" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="182dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="12.7dp"
+        android:layout_marginRight="62dp"
+        android:background="@drawable/blue_border_rounded_cornwe">
+
+        <!--  INPUT-->
+        <TextView
+            android:id="@+id/password_textview"
+            android:layout_width="217dp"
+            android:layout_height="269dp"
+            android:layout_toRightOf="@+id/password_list"
+            android:gravity="center"
+            android:text="Passwords"
+            android:textSize="23sp" />
+
+        <!--ICON-->
+        <ImageView
+            android:id="@+id/password_list"
+            android:layout_width="95dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:src="@drawable/password" />
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
